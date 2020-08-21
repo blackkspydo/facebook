@@ -1,0 +1,209 @@
+:root{
+    --grey: rgba(226, 228, 231, 0.5);
+    --blue: rgba(24, 119, 242, 1);
+    --green: rgba(66, 183, 42, 1);
+    --text: rgba(148, 154, 155, 1);
+
+}
+body{
+    background-color: var(--grey);
+}
+.container{
+    display: grid;
+    grid-template-columns:1.3fr 1fr ;
+    grid-template-rows: 80vh 20vh;
+    grid-template-areas: "logo form"
+    "footer footer";
+    margin-top: 1vh;
+}
+.header{
+    
+    grid-area: logo;
+    justify-self: right;
+    align-self: center;
+    display: inline-block;
+    width: 580px;
+    height: 266px;
+}
+.header img{
+    /* padding-bottom:0; */
+    width: 50%;
+    margin-bottom: 3vh;
+    align-self: flex-start;
+}
+.tagline{
+    height: 84px;
+    width: 500px;
+}
+.tagline h2{
+    font-family (stack): SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: rgb(28, 30, 33);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: rgb(28, 30, 33);
+    text-align: start;
+    text-indent: 0px;
+    margin:0;
+    
+    
+}
+
+.form{
+    /* box-sizing: border-box; */
+    align-self: center;
+    justify-self: left;
+    width: 396px;
+    height: 456px;
+    /* border: 3px solid black; */
+    
+        
+    
+}
+.form-box{
+    background-color: #ffffff;
+    display: inline-block;
+    box-shadow: -10px 10px 10px rgba(226, 228, 231, 1);
+    /*box-shadow: 10px -10px 10px rgba(226, 228, 231, 1);
+    */width: 396px;
+    height: 356px;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+
+#user-id ,#user-pw{
+    width: 366px;
+    padding: 14px 12px;
+    margin: 10px 6px 5px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+#user-id{
+    margin-top: 18px;
+}
+.form button{
+    box-sizing: border-box;
+    height: 54px;
+    width: 366px;
+    margin: 10px 6px 10px 15px;
+    display: block;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    
+}
+.log-in{
+    background-color: var(--blue);
+    text-align:center;
+    font-weight: 600;
+    font-size: larger;
+    font-style: normal;
+    font-variant: normal;
+    color: #ffffff;
+    cursor: pointer;
+    
+    }
+.line{
+    display: flex;
+    border-bottom:2px solid #dadde1;
+    align-items: center;
+    margin: 25px 16px;
+    text-align:center;
+    box-shadow: -2px 1px 2px #dadde1;
+}
+.new-acc{
+    background-color: var(--green);
+    text-align:center;
+    font-weight: 600;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: 5px 0 5px 90px !important;
+    
+    width: 210px !important;
+    height: 50px !important;
+    
+}
+.forget-acc{
+    text-align: center;
+    color: var(--blue);
+
+}
+.forget-acc a:link{
+    text-decoration: none;
+    color: var(--blue)
+}
+.forget-acc a:visited{
+    text-decoration: none;
+    color: var(--blue)
+}
+.forget-acc a:hover{
+    text-decoration: underline;
+    color: var(--blue)
+}
+.forget-acc a:active{
+    color: #dfba42;
+}
+.log-in:hover{
+    background-color: rgb(23, 97, 194) ;
+}
+.new-acc:hover{
+    background-color: rgb(54, 148, 35);
+}
+a:link{
+    text-decoration: none;
+    color: var(--text);
+}
+a:visited{
+    text-decoration: none;
+    color: var(--text);
+}
+a:hover{
+    text-decoration: underline;
+}
+footer{
+    grid-area: footer;
+    margin-top: 10vh;
+    padding: 2vh 17vw;
+    background-color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(28, 30, 33);
+    word-spacing: 4px;
+    line-height: 20px;
+    font-size: small;
+    height: 90px;
+}
+
+.celebrity-line{
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5vh;
+    text-align:center;
+}
+.celebrity-line a{
+    color: #000000;
+    font-weight: bolder;
+}
+.f-line{
+    display: flex;
+    border-bottom:2px solid #dadde1;
+    align-items: center;
+    margin: 10px 0px;
+    text-align:center;
+    /* box-shadow: -1px 1px 1px #dadde1; */
+}
