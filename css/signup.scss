@@ -25,11 +25,7 @@ $black:rgba(28, 30, 33, 1);
 // ====================
 // Layout
 // ====================
-// .container-signup{
-//     height: 100%;
-//     width: 100%;
-//     background-color: rgba(255, 255, 255, 1);
-// }
+
 .container-signup, #signupform{
     width: 432px;
     height: 500px;
@@ -154,6 +150,9 @@ form #f-name, form #l-name{
         size: 1rem;
         family: $text-font;
     }
+}
+#signupform input[type="radio"]{
+    align-self: center;
 }
 .birthdate, .gender{
     margin-bottom: 10px;

@@ -171,6 +171,12 @@ form #f-name, form #l-name {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+#signupform input[type="radio"] {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .birthdate, .gender {
   margin-bottom: 10px;
 }
