@@ -1,0 +1,230 @@
+$grey : rgba(226, 228, 231, 0.5);
+$dark-grey:rgb(174, 176, 179);
+$blue : rgba(24, 119, 242, 1);
+$green : rgba(0, 164, 0, 1);
+$text : rgb(96, 103, 112);
+$text-font: Helvetica, Arial, sans-serif;
+$black:rgba(28, 30, 33, 1);
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+// ====================
+// Layout
+// ====================
+// .container-signup{
+//     height: 100%;
+//     width: 100%;
+//     background-color: rgba(255, 255, 255, 1);
+// }
+.container-signup, #signupform{
+    width: 432px;
+    height: 500px;
+    // box-shadow: 10px 0 10px rgb(159, 163, 163);
+    margin: 2.5em auto;
+    background-color: rgb(255, 255, 255);
+   
+}
+#cross{
+    font-size: 2rem;
+    float: right;
+    margin-right: 5px;
+    
+}
+#cross:hover{
+    cursor: pointer;
+}
+
+#signupform h1, .subtitle{
+    padding-left: 1rem;
+    width: 80%;
+}
+.subtitle{
+    margin-bottom: .5em;
+
+}
+#signupform form{
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+    border-top: 1px solid #dadde1;
+    box-sizing: border-box;
+    padding: 16px;
+    position: relative;
+    width: 432px;
+
+    
+ 
+}
+
+.name-container{
+    box-sizing: border-box;
+    width: 400px;
+    height: 52px;
+    
+}
+form #f-name, form #l-name{
+    box-sizing: border-box;
+    border-width: 1px;
+    display: inline-block;
+    position: relative;
+    width: 194px;
+    height: 42px;
+    background-color: $grey;
+    border:1px solid $dark-grey;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+#f-name{
+    float: left;
+    margin-right: 6px;
+}
+#l-name{
+    float: right;
+    margin-left: 6px;
+}
+#email, #pw{
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    height: 42px;
+    background-color: $grey;
+    border:1px solid $dark-grey;
+    border-width: 1px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.birthdate, .gender-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+}
+#month, 
+#year, 
+#day,
+.female,
+.male,
+.custom{
+    background-color: #fff;
+   width: 125px;
+   height: 36px;
+   border-radius: 5px;
+   border-width: 1px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+.female,
+.male,
+.custom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border: 1.8px solid  $dark-grey;
+}
+.female label,
+.male label,
+.custom label{
+    align-self: center;
+    color: rgb(28, 30, 33);
+    font:{
+        size: 1rem;
+        family: $text-font;
+    }
+}
+.birthdate, .gender{
+    margin-bottom: 10px;
+}
+
+#signupform button{
+    display: block;
+    width: 194px;
+    height: 36px;
+    background-color: $green;
+    border: 0px solid white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin: 1.6em auto 0;
+}
+// ====================
+// Typography
+// ====================
+#signupform h1{
+    color: rgb(28, 30, 33);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.1em 0;
+    
+}
+.subtitle{
+    color: $text;
+    font:{
+        family: $text-font ;
+        size: 0.9rem;
+        weight:400;
+    }
+}
+#signupform label{
+    color: $text;
+    
+    font:{
+        family: $text-font ;
+        size: .8rem;
+        weight:400;
+    }
+}
+.policy-info{
+    @extend label;
+    font-size: .6555rem;
+    text-align: justify;
+}
+.policy-info a:link,
+.policy-info a:visited{
+    color: $blue;
+    text-decoration: none;
+}
+.policy-info a:hover{
+    text-decoration: underline;
+}
+#signupform button{
+    color: rgb(252, 237, 237);
+    font:{
+        size: 1.125rem;
+        weight: 700 ;
+    }
+    text-decoration: none;
+    text-align: center;
+}
+#signupform input[placeholder]{
+    padding-left: .5rem;
+    font:{
+        size:1rem;
+
+    }
+}
