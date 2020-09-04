@@ -1,22 +1,22 @@
 .modal {
   display: none;
-  /* Hidden by default */
+  /*Hiddenbydefault*/
   position: fixed;
-  /* Stay in place */
+  /*Stayinplace*/
   z-index: 1;
-  /* Sit on top */
+  /*Sitontop*/
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
+  /*Fullwidth*/
   height: 100%;
-  /* Full height */
+  /*Fullheight*/
   overflow: auto;
-  /* Enable scroll if needed */
+  /*Enablescrollifneeded*/
   background-color: black;
-  /* Fallback color */
+  /*Fallbackcolor*/
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+  /*Blackw/opacity*/
   padding-top: 60px;
 }
 
